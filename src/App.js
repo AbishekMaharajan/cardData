@@ -3,9 +3,9 @@ import React from "react";
 import CardData from "./component/CardData";
 import { Container } from "react-bootstrap";
 import axios from "axios";
+import { useState, useEffect } from "react";
 // import LoginForm from "./component/LoginForm";
 // import Header from "./component/Header";
-import { useState, useEffect } from "react";
 const baseURL = "https://jsonplaceholder.typicode.com/photos/";
 function App() {
   const [cardItem, setCardItem] = useState([]);
