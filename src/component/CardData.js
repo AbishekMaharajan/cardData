@@ -3,19 +3,19 @@ import { Card, Button, Container, Row, Col } from "react-bootstrap";
 import { FaShoppingCart } from "react-icons/fa";
 function CardData({ items }) {
   return (
-    <Container fluid className=" bg-light">
-      <Row xs={1} md={4} className="g-4 mt-1">
+    <Container className=" bg-light">
+      <Row className="g-4 mt-1">
         {items.map((item) => (
-          <Col key={item.id}>
+          <Col key={item.id} className="d-flex justify-content-center">
             <Card
-              className="shadow p-3 mb-5 text-light rounded bg-dark"
+              className="shadow p-3 mb-5 text-dark rounded bg-light"
               style={{ width: "20rem" }}
             >
-              <Card.Img variant="top" src={item.url} />
+              <Card.Img variant="top" src={item.url} fluid />
               <Card.Body>
                 <Card.Title>Card Title</Card.Title>
                 <Card.Text>{item.title}</Card.Text>
-                <Button variant="light">
+                <Button variant="dark">
                   <FaShoppingCart size="20px" className="mr-5" />
                   Add To Cart
                 </Button>
