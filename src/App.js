@@ -5,6 +5,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 // import LoginForm from "./component/LoginForm";
 import Header from "./component/Header";
+import Sidebar from "./component/Sidebar";
 const baseURL = "https://jsonplaceholder.typicode.com/photos/";
 function App() {
   const [cardItem, setCardItem] = useState([]);
@@ -27,6 +28,7 @@ function App() {
   return (
     <>
       <Header />
+      <Sidebar />
       <CardData items={cardItem} />
       {/* <LoginForm /> */}
     </>

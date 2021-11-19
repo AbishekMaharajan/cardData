@@ -1,9 +1,10 @@
 import React from "react";
+import "./CardData.css";
 import { Card, Button, Container, Row, Col } from "react-bootstrap";
 import { FaShoppingCart } from "react-icons/fa";
 function CardData({ items }) {
   return (
-    <Container className=" bg-light">
+    <Container className=" bg-light card_container">
       <Row className="g-4 mt-1">
         {items.map((item) => (
           <Col key={item.id} className="d-flex justify-content-center">
